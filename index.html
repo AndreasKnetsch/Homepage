@@ -45,6 +45,21 @@
   /* ---------- hero ---------- */
   header.hero{padding:96px 0 0;}
 
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1fr 208px;
+    gap:56px;
+    align-items:start;
+  }
+
+  .portrait{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:2px;
+    margin-top:10px;
+  }
+
   h1{
     font-size:clamp(2.9rem,7.4vw,4.6rem);
     font-weight:600;
@@ -162,6 +177,8 @@
   @media (max-width:620px){
     body{font-size:18px;}
     header.hero{padding-top:60px;}
+    .hero-grid{grid-template-columns:1fr;gap:0;}
+    .portrait{width:148px;margin:26px 0 0;}
     ul.entries > li{grid-template-columns:1fr;gap:4px;}
     .year{order:-1;}
     nav{gap:16px 20px;}
@@ -181,18 +198,23 @@
 <div class="wrap">
 
   <header class="hero">
+   <div class="hero-grid">
+    <div>
     <h1>Andreas&nbsp;Knetsch</h1>
 
     <p class="statement">How managers talk about their firms, and what capital markets make of it.</p>
 
     <p class="identity">
       <strong>Postdoctoral Researcher</strong>, Chair of Corporate Finance, RWTH Aachen University<br>
-      <a href="mailto:andreasknetsch@gmx.de">andreasknetsch@gmx.de</a> &nbsp;·&nbsp;
-      <a href="#">Google Scholar</a> &nbsp;·&nbsp;
-      <a href="#">SSRN</a> &nbsp;·&nbsp;
-      <a href="#">ORCID</a> &nbsp;·&nbsp;
-      <a href="cv.pdf">Curriculum vitae (PDF)</a>
+      <a href="mailto:andreas.knetsch@bfw.rwth-aachen.de">andreas.knetsch@bfw.rwth-aachen.de</a> &nbsp;·&nbsp;
+      <a href="https://scholar.google.com/citations?user=9D-W80oAAAAJ&amp;hl=en">Google Scholar</a> &nbsp;·&nbsp;
+      <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=3039897">SSRN</a> &nbsp;·&nbsp;
+      <a href="CV_Andreas_Knetsch.pdf">Curriculum vitae (PDF)</a>
     </p>
+    </div>
+
+    <img class="portrait" src="portrait.jpg" width="720" height="900" alt="Portrait of Andreas Knetsch">
+   </div>
 
     <nav>
       <a href="#research">Research</a>
