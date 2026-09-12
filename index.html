@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Andreas Knetsch — Corporate Finance and Financial Accounting</title>
+<meta name="description" content="Andreas Knetsch is a postdoctoral researcher at RWTH Aachen University working on managerial language, disclosure, and capital markets.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1B2A41;
+    --paper:#FCFCFA;
+    --muted:#6B7280;
+    --rule:#DEDCD4;
+    --accent:#7B2D3B;
+    --measure:66ch;
+  }
+
+  *{box-sizing:border-box;}
+
+  html{-webkit-text-size-adjust:100%;}
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Newsreader",Georgia,serif;
+    font-size:19px;
+    line-height:1.62;
+    font-weight:400;
+  }
+
+  .wrap{
+    max-width:940px;
+    margin:0 auto;
+    padding:0 28px 96px;
+  }
+
+  a{color:var(--accent);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:.06em;}
+  a:hover{text-decoration-thickness:.12em;}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px;}
+
+  /* ---------- hero ---------- */
+  header.hero{padding:96px 0 0;}
+
+  h1{
+    font-size:clamp(2.9rem,7.4vw,4.6rem);
+    font-weight:600;
+    letter-spacing:-.022em;
+    line-height:1.02;
+    margin:0 0 26px;
+  }
+
+  .statement{
+    font-size:clamp(1.15rem,2.3vw,1.42rem);
+    font-weight:300;
+    line-height:1.45;
+    max-width:34ch;
+    margin:0 0 34px;
+    border-left:2px solid var(--accent);
+    padding-left:20px;
+  }
+
+  .identity{
+    font-family:"Inter",system-ui,sans-serif;
+    font-size:.83rem;
+    line-height:1.75;
+    color:var(--muted);
+    max-width:var(--measure);
+  }
+  .identity strong{color:var(--ink);font-weight:600;}
+
+  nav{
+    margin:54px 0 0;
+    padding:14px 0;
+    border-top:1px solid var(--rule);
+    border-bottom:1px solid var(--rule);
+    font-family:"Inter",system-ui,sans-serif;
+    font-size:.82rem;
+    display:flex;
+    flex-wrap:wrap;
+    gap:26px;
+  }
+  nav a{color:var(--ink);text-decoration:none;}
+  nav a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:4px;}
+
+  /* ---------- sections ---------- */
+  section{padding:64px 0 0;}
+
+  h2{
+    font-size:1.34rem;
+    font-weight:600;
+    letter-spacing:-.01em;
+    margin:0 0 8px;
+  }
+
+  h3{
+    font-family:"Inter",system-ui,sans-serif;
+    font-size:.78rem;
+    font-weight:600;
+    color:var(--muted);
+    letter-spacing:.02em;
+    margin:38px 0 14px;
+  }
+
+  p{max-width:var(--measure);margin:0 0 1.05em;}
+  .lede{margin-top:18px;}
+
+  /* ---------- year-anchored entry list ---------- */
+  ul.entries{list-style:none;margin:0;padding:0;}
+
+  ul.entries > li{
+    display:grid;
+    grid-template-columns:5.6rem 1fr;
+    gap:0 22px;
+    padding:15px 0;
+    border-top:1px solid var(--rule);
+    align-items:baseline;
+  }
+  ul.entries > li:first-child{border-top:none;}
+
+  ul.entries.no-years > li{grid-template-columns:1fr;}
+
+  .year{
+    font-family:"Inter",system-ui,sans-serif;
+    font-size:.78rem;
+    font-weight:500;
+    color:var(--muted);
+    font-variant-numeric:tabular-nums;
+    white-space:nowrap;
+  }
+
+  .entry{max-width:var(--measure);}
+  .entry .venue{font-style:italic;}
+  .entry .note{
+    display:block;
+    font-family:"Inter",system-ui,sans-serif;
+    font-size:.76rem;
+    color:var(--muted);
+    margin-top:5px;
+    line-height:1.55;
+  }
+
+  .status{color:var(--accent);}
+
+  /* ---------- footer ---------- */
+  footer{
+    margin-top:80px;
+    padding-top:22px;
+    border-top:1px solid var(--rule);
+    font-family:"Inter",system-ui,sans-serif;
+    font-size:.78rem;
+    color:var(--muted);
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px 26px;
+    justify-content:space-between;
+  }
+
+  @media (max-width:620px){
+    body{font-size:18px;}
+    header.hero{padding-top:60px;}
+    ul.entries > li{grid-template-columns:1fr;gap:4px;}
+    .year{order:-1;}
+    nav{gap:16px 20px;}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none !important;transition:none !important;}
+  }
+
+  @media print{
+    body{background:#fff;font-size:11pt;}
+    nav{display:none;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <h1>Andreas&nbsp;Knetsch</h1>
+
+    <p class="statement">How managers talk about their firms, and what capital markets make of it.</p>
+
+    <p class="identity">
+      <strong>Postdoctoral Researcher</strong>, Chair of Corporate Finance, RWTH Aachen University<br>
+      <a href="mailto:andreasknetsch@gmx.de">andreasknetsch@gmx.de</a> &nbsp;·&nbsp;
+      <a href="#">Google Scholar</a> &nbsp;·&nbsp;
+      <a href="#">SSRN</a> &nbsp;·&nbsp;
+      <a href="#">ORCID</a> &nbsp;·&nbsp;
+      <a href="cv.pdf">Curriculum vitae (PDF)</a>
+    </p>
+
+    <nav>
+      <a href="#research">Research</a>
+      <a href="#working-papers">Working papers</a>
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#grants">Grants and awards</a>
+      <a href="#service">Service</a>
+    </nav>
+  </header>
+
+  <section id="research">
+    <h2>Research</h2>
+    <p class="lede">I work at the intersection of corporate finance and financial accounting. Most of my research asks what managerial language reveals: the rhetoric of earnings conference calls, CEO television interviews after earnings announcements, reorganization plans filed in Chapter 11, and the sustainability disclosures of firms and funds.</p>
+    <p>Methodologically I combine textual analysis and machine learning with panel econometrics and event studies, using large corpora of corporate communication together with capital market and lending data.</p>
+  </section>
+
+  <section id="working-papers">
+    <h2>Working papers</h2>
+    <ul class="entries">
+      <li>
+        <span class="year status">R&amp;R</span>
+        <span class="entry">Breuer, W., A. Follonier, A. Haake, and A. Knetsch. CEO television interviews and earnings surprises. <span class="venue">European Accounting Review</span>, revise and resubmit.</span>
+      </li>
+      <li>
+        <span class="year status">R&amp;R</span>
+        <span class="entry">Breuer, C., W. Breuer, A.-K. Fischer, A. Knetsch, and J. A. K. Quintana Schmidt. Sustainability certificates and relationship lending in SME finance. <span class="venue">Schmalenbach Journal of Business Research</span>, revise and resubmit.</span>
+      </li>
+      <li>
+        <span class="year">Draft</span>
+        <span class="entry">Breuer, W., A. Knetsch, and K. Mersmann. What do reorganization plans reveal about post-bankruptcy outcomes?
+          <span class="note">Presented at Harvard-Wharton Insolvency and Restructuring Seminar 2024 and German Finance Association Annual Meeting 2024, 2025.</span>
+        </span>
+      </li>
+      <li>
+        <span class="year">Draft</span>
+        <span class="entry">Breuer, W., A. Knetsch, and S. Uddin. It's not what you say, but how you say it: charismatic rhetoric in earnings conference calls.
+          <span class="note">Presented at German Finance Association Annual Meeting 2023, Research in Behavioral Finance Conference 2022, European Financial Management Association Annual Meeting 2022.</span>
+        </span>
+      </li>
+      <li>
+        <span class="year">Draft</span>
+        <span class="entry">Fiore, F., A. Knetsch, C. Latino, and L. Pelizzon. Where disclosure binds: entity-level obligations and product-level reporting.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <h3>Peer-reviewed journal articles</h3>
+    <ul class="entries">
+      <li>
+        <span class="year">2026</span>
+        <span class="entry">Breuer, W., A. Follonier, and A. Knetsch. Big bath accounting and managerial rhetoric. <span class="venue">The British Accounting Review</span>, 101840.</span>
+      </li>
+      <li>
+        <span class="year">2026</span>
+        <span class="entry">Breuer, W., A. Knetsch, and L. M. Siemer. Rethinking short-termism: when shareholder impatience reduces short-termism. <span class="venue">Finance Research Letters</span>, 92, 109487.</span>
+      </li>
+      <li>
+        <span class="year">2026</span>
+        <span class="entry">Breuer, W., and A. Knetsch. The 30th annual meeting of the German Finance Association in Aachen. <span class="venue">Journal of Business Economics</span>, 96, 1–9.</span>
+      </li>
+      <li>
+        <span class="year">2025</span>
+        <span class="entry">Breuer, W., S. Haas, and A. Knetsch. Chapter 11 bankruptcy outcomes and gubernatorial election cycles. <span class="venue">Finance Research Letters</span>, 82, 107523.</span>
+      </li>
+      <li>
+        <span class="year">2025</span>
+        <span class="entry">Bobenhausen, N., W. Breuer, A. Knetsch, and L. M. Siemer. Share repurchases, undervaluation, and corporate social responsibility. <span class="venue">Business &amp; Society</span>, 5, 1185–1248.</span>
+      </li>
+      <li>
+        <span class="year">2024</span>
+        <span class="entry">Breuer, W., A. Knetsch, and E. Sachsenhausen. Superficial habits: influence and predictive value of Seeking Alpha articles. <span class="venue">Financial Analysts Journal</span>, 81, 102–128.</span>
+      </li>
+      <li>
+        <span class="year">2023</span>
+        <span class="entry">Breuer, W., A. Knetsch, and A. J. Salzmann. Trust rhetoric and CEO gender. <span class="venue">Review of Financial Economics</span>, 41, 322–344.</span>
+      </li>
+      <li>
+        <span class="year">2023</span>
+        <span class="entry">Breuer, W., and A. Knetsch. Recent trends in the digitalization of finance and accounting. <span class="venue">Journal of Business Economics</span>, 93, 1451–1461.</span>
+      </li>
+      <li>
+        <span class="year">2022</span>
+        <span class="entry">Breuer, W., and A. Knetsch. Informal authority and economic outcomes of family firms: an issue of national power distance. <span class="venue">International Review of Financial Analysis</span>, 81, 102032.</span>
+      </li>
+      <li>
+        <span class="year">2022</span>
+        <span class="entry">Knetsch, A., and A. J. Salzmann. Societal trust and corporate underinvestment. <span class="venue">Global Finance Journal</span>, 54, 100755.</span>
+      </li>
+      <li>
+        <span class="year">2020</span>
+        <span class="entry">Breuer, W., A. Knetsch, and A. J. Salzmann. What does it mean when managers talk about trust? <span class="venue">Journal of Business Ethics</span>, 166, 473–488.</span>
+      </li>
+    </ul>
+
+    <h3>Book chapters</h3>
+    <ul class="entries">
+      <li>
+        <span class="year">2024</span>
+        <span class="entry">Breuer, W., M. Hass, A. Knetsch, and E. Seefried. Sustainability, the green transition, and greenwashing: an overview for research and practice. In: Letmathe, P. et al. (eds.), <span class="venue">Transformation towards sustainability: a novel interdisciplinary framework</span>, 75–91.</span>
+      </li>
+      <li>
+        <span class="year">2024</span>
+        <span class="entry">Breuer, W., S. Khan, A. Knetsch, S. Ostojic, and M. Traverso. Corporate social responsibility: conscious investing and green transformation. In: Letmathe, P. et al. (eds.), <span class="venue">Transformation towards sustainability: a novel interdisciplinary framework</span>, 175–200.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <p class="lede">Lectures, seminars and tutorials in corporate finance, corporate valuation and digital finance at RWTH Aachen University and the RWTH Business School, in German and English, alongside the supervision of more than twenty bachelor and master theses since 2015.</p>
+    <ul class="entries no-years">
+      <li>
+        <span class="entry">Introduction to cryptocurrencies, blockchain, and decentralized finance <span class="note">Seminar, master programme, co-taught.</span></span>
+      </li>
+      <li>
+        <span class="entry">Analysis of public corporations <span class="note">Seminar, bachelor programme, in German.</span></span>
+      </li>
+      <li>
+        <span class="entry">Financial management and digital change <span class="note">Lecture, MBA programme of RWTH Business School, in English.</span></span>
+      </li>
+      <li>
+        <span class="entry">Corporate finance and corporate valuation <span class="note">Lectures, master programme, in German.</span></span>
+      </li>
+      <li>
+        <span class="entry">SME financing <span class="note">Seminar, bachelor programme, co-taught, in German.</span></span>
+      </li>
+    </ul>
+  </section>
+
+  <section id="grants">
+    <h2>Grants and awards</h2>
+    <ul class="entries">
+      <li>
+        <span class="year">2023–2025</span>
+        <span class="entry">Certification of clean energy SMEs, with W. Breuer. EU LIFE21 Programme for the Environment and Climate Action, €243,027.</span>
+      </li>
+      <li>
+        <span class="year">2022</span>
+        <span class="entry">Predicting bankruptcy outcomes from restructuring plans: a machine learning approach. RWTH Start-Up Grant, €7,409.</span>
+      </li>
+      <li>
+        <span class="year">2019–2021</span>
+        <span class="entry">Managerial traits and investment efficiency: the role of long-term orientation and perceived trustworthiness, with W. Breuer and A. J. Salzmann. German Research Foundation (DFG), €117,418.</span>
+      </li>
+      <li>
+        <span class="year">2023</span>
+        <span class="entry">Best Teaching Award, School of Business and Economics, RWTH Aachen University.</span>
+      </li>
+      <li>
+        <span class="year">2019</span>
+        <span class="entry">Best Paper Award, Academy of Management Annual Meeting.</span>
+      </li>
+      <li>
+        <span class="year">2010</span>
+        <span class="entry">Student scholarship of the German Academic Exchange Service (DAAD).</span>
+      </li>
+    </ul>
+  </section>
+
+  <section id="service">
+    <h2>Service</h2>
+    <p class="lede">Co-organizer of the 30th Annual Meeting of the German Finance Association in Aachen (2024). Editor of the special issues “Finance and Accounting in the Age of Digitalization” and “Frontiers in Finance” at the <em>Journal of Business Economics</em>. Referee for The British Accounting Review, International Review of Financial Analysis and Journal of Business Economics.</p>
+    <p>Recent presentations include the European Accounting Association Annual Meeting (Prague, 2026), the German Finance Association Annual Meeting (Hagen, 2025) and the Harvard-Wharton Insolvency and Restructuring Seminar (2024, 2025).</p>
+  </section>
+
+  <footer>
+    <span>Andreas Knetsch · Chair of Corporate Finance, RWTH Aachen University</span>
+    <span>Last updated September 2026</span>
+  </footer>
+
+</div>
+</body>
+</html>
